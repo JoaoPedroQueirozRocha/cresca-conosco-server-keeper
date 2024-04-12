@@ -18,7 +18,7 @@ async function fetchServerData() {
 }
 
 // Agendar a tarefa para rodar a cada 5 minutos
-cron.schedule("*/1 * * * *", () => {
+cron.schedule("*/15 * * * *", () => {
     console.log("Fazendo chamada ao servidor externo...");
     fetchServerData();
 });
